@@ -1,7 +1,28 @@
+
+/**
+ *joc penjat en java
+ *
+ *@author Luis
+ *@version 1.0
+ *
+ */
+
 package com.company;
 
 import java.util.Scanner;
 import java.util.Random;
+
+/**
+ * comença utilitzant 3 parametres estàtics que son: paraules (vector que conte 3
+ * paraules a esbrinar), index (per recorrer la paraula) i la p (per ficar guionets a
+ * les que no esbrinem).
+ *
+ *@param paraules String vector amb paraules definides
+ *@param index int l'utilitzem per recorrer les paraules del vector
+ *@param p String l'utilitzem per ficar guionets a les lletres que no esbrinem
+ *
+ */
+
 
 public class Main {
 
@@ -31,6 +52,16 @@ public class Main {
             System.out.println(p);
         }
    }
+
+    /**
+     *Funció que comproba que quan introduim una lletra es verdader o fals que es troba
+     * dins de la paraula a esbrinar.
+     *
+     *
+     * @param nova_lletra boolean Rep per una nova lletra
+     * @return boolean Retorna true o false, si el la lletra es correcta o no.
+     *
+     */
 
     static public boolean nova_lletra(char nova) {
         boolean trobada = false;
